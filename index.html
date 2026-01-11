@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FTIR & GC-MS Proposal | Yash Poly</title>
+  <style>
+    body {font-family: Arial, sans-serif;margin:0;background:#f5f7fb;color:#333;}
+    header {background:#0b3c5d;color:#fff;padding:20px;text-align:center;}
+    header img {height:50px;margin-bottom:10px;}
+    .container {padding:40px 20px;display:flex;justify-content:center;gap:40px;flex-wrap:wrap;}
+    .card {background:#fff;width:260px;height:220px;border-radius:14px;box-shadow:0 8px 20px rgba(0,0,0,0.1);display:flex;flex-direction:column;justify-content:center;align-items:center;cursor:pointer;transition:0.3s;}
+    .card:hover {transform:translateY(-8px);box-shadow:0 14px 30px rgba(0,0,0,0.15);}    
+    .icon {font-size:52px;margin-bottom:10px;}
+    .card h2 {margin:0;color:#0b3c5d;}
+
+    .popup {display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.65);justify-content:center;align-items:center;padding:20px;}
+    .popup-content {background:#fff;max-width:900px;width:100%;max-height:90vh;overflow-y:auto;border-radius:14px;padding:30px;position:relative;}
+    .close {position:absolute;top:15px;right:20px;font-size:24px;cursor:pointer;}
+    h3,h4 {color:#0b3c5d;}
+    ul {margin-left:20px;}
+    .section {margin-bottom:25px;}
+    .btn {display:inline-block;padding:10px 16px;margin:6px 6px 0 0;border-radius:6px;background:#0b3c5d;color:#fff;text-decoration:none;font-size:14px;}
+    .compare {background:#eef3f8;padding:20px;border-radius:12px;margin:30px;}
+    table {width:100%;border-collapse:collapse;}
+    th,td {border:1px solid #ccc;padding:10px;text-align:center;}
+    th {background:#0b3c5d;color:#fff;}
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Science_icon.png" alt="logo" />
+  <h1>Analytical Proposal for Yash Poly Industries</h1>
+  <p>FTIR & GC-MS | Quality • Compliance • Growth</p>
+</header>
+
+<section class="container">
+  <div class="card" onclick="openPopup('ftir')">
+    <div class="icon">🔬</div>
+    <h2>FTIR</h2>
+    <p>Routine QC & Polymer ID</p>
+  </div>
+  <div class="card" onclick="openPopup('gcms')">
+    <div class="icon">⚗️</div>
+    <h2>GC-MS</h2>
+    <p>Compliance & Deep Analysis</p>
+  </div>
+</section>
+
+<section class="compare">
+  <h3>FTIR vs GC-MS (Management Summary)</h3>
+  <table>
+    <tr><th>Parameter</th><th>FTIR</th><th>GC-MS</th></tr>
+    <tr><td>Primary Role</td><td>Daily QC & Material ID</td><td>Compliance & Additive Analysis</td></tr>
+    <tr><td>Speed</td><td>Minutes</td><td>Detailed (Longer)</td></tr>
+    <tr><td>Cost Level</td><td>Medium</td><td>High (Strategic)</td></tr>
+    <tr><td>RoHS Support</td><td>Screening</td><td>Confirmatory</td></tr>
+    <tr><td>ROI Impact</td><td>Immediate</td><td>Long-term</td></tr>
+  </table>
+</section>
+
+<!-- FTIR POPUP -->
+<div class="popup" id="ftirPopup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h3>FTIR Spectrometer with ATR</h3>
+
+    <div class="section">
+      <h4>What It Does</h4>
+      <ul>
+        <li>Identifies polymer type and chemical structure</li>
+        <li>Verifies raw materials and batch consistency</li>
+        <li>Detects contamination and formulation deviation</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h4>Daily Use at Yash Poly</h4>
+      <ul>
+        <li>Incoming raw material approval</li>
+        <li>Routine QC before batch release</li>
+        <li>Customer complaint investigation</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h4>Why FTIR is Essential</h4>
+      <ul>
+        <li>Direct solid testing using ATR</li>
+        <li>Fast results, minimal operator skill</li>
+        <li>Supports ISO & RoHS readiness</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h4>Commercial & ROI</h4>
+      <ul>
+        <li>One-time investment (~₹17.5 Lakh)</li>
+        <li>Saves recurring external testing costs</li>
+        <li>Payback typically within 1–2 years</li>
+      </ul>
+    </div>
+
+    <a class="btn" href="#">Download FTIR Quotation</a>
+    <a class="btn" href="#">Download FTIR ROI</a>
+  </div>
+</div>
+
+<!-- GC-MS POPUP -->
+<div class="popup" id="gcmsPopup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h3>GC-MS with Pyrolyser</h3>
+
+    <div class="section">
+      <h4>What It Does</h4>
+      <ul>
+        <li>Identifies additives, plasticizers & flame retardants</li>
+        <li>Detects restricted RoHS substances</li>
+        <li>Provides exact chemical fingerprint</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h4>Role of Pyrolyser</h4>
+      <ul>
+        <li>Converts solid polymers into analyzable vapors</li>
+        <li>Essential for PVC, HFFR & XLPE materials</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h4>Why GC-MS is Strategic</h4>
+      <ul>
+        <li>Mandatory for advanced compliance demands</li>
+        <li>Reduces dependence on third-party labs</li>
+        <li>Improves export & OEM acceptance</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h4>Commercial & ROI</h4>
+      <ul>
+        <li>Strategic investment (~₹42.5 Lakh)</li>
+        <li>High-value customer & export support</li>
+        <li>Long-term ROI & brand positioning</li>
+      </ul>
+    </div>
+
+    <a class="btn" href="#">Download GC-MS Quotation</a>
+    <a class="btn" href="#">Download GC-MS ROI</a>
+  </div>
+</div>
+
+<script>
+  function openPopup(type){
+    document.getElementById(type==='ftir'?'ftirPopup':'gcmsPopup').style.display='flex';
+  }
+  function closePopup(){
+    document.getElementById('ftirPopup').style.display='none';
+    document.getElementById('gcmsPopup').style.display='none';
+  }
+</script>
+
+</body>
+</html>
