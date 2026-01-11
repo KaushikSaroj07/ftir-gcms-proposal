@@ -3,165 +3,156 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FTIR & GC-MS Proposal | Yash Poly</title>
+  <title>FTIR & GC-MS Proposal | Analytical Technologies</title>
   <style>
-    body {font-family: Arial, sans-serif;margin:0;background:#f5f7fb;color:#333;}
-    header {background:#0b3c5d;color:#fff;padding:20px;text-align:center;}
-    header img {height:50px;margin-bottom:10px;}
-    .container {padding:40px 20px;display:flex;justify-content:center;gap:40px;flex-wrap:wrap;}
-    .card {background:#fff;width:260px;height:220px;border-radius:14px;box-shadow:0 8px 20px rgba(0,0,0,0.1);display:flex;flex-direction:column;justify-content:center;align-items:center;cursor:pointer;transition:0.3s;}
-    .card:hover {transform:translateY(-8px);box-shadow:0 14px 30px rgba(0,0,0,0.15);}    
-    .icon {font-size:52px;margin-bottom:10px;}
-    .card h2 {margin:0;color:#0b3c5d;}
-
-    .popup {display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.65);justify-content:center;align-items:center;padding:20px;}
-    .popup-content {background:#fff;max-width:900px;width:100%;max-height:90vh;overflow-y:auto;border-radius:14px;padding:30px;position:relative;}
-    .close {position:absolute;top:15px;right:20px;font-size:24px;cursor:pointer;}
-    h3,h4 {color:#0b3c5d;}
-    ul {margin-left:20px;}
-    .section {margin-bottom:25px;}
-    .btn {display:inline-block;padding:10px 16px;margin:6px 6px 0 0;border-radius:6px;background:#0b3c5d;color:#fff;text-decoration:none;font-size:14px;}
-    .compare {background:#eef3f8;padding:20px;border-radius:12px;margin:30px;}
-    table {width:100%;border-collapse:collapse;}
-    th,td {border:1px solid #ccc;padding:10px;text-align:center;}
-    th {background:#0b3c5d;color:#fff;}
+    body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f6f8fc;color:#333}
+    header{background:#fff;padding:20px;text-align:center;border-bottom:3px solid #0b3c5d}
+    header img{max-height:70px}
+    .hero{text-align:center;padding:40px 20px}
+    .hero h1{color:#0b3c5d;margin-bottom:10px}
+    .options{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin-top:30px}
+    .card{background:#fff;width:280px;padding:40px 20px;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,0.12);cursor:pointer;text-align:center;transition:.3s}
+    .card:hover{transform:translateY(-8px)}
+    .icon{font-size:56px;margin-bottom:15px}
+    .card h2{margin:0;color:#0b3c5d}
+    .page{display:none;max-width:1000px;margin:40px auto;padding:20px}
+    .page h2{color:#0b3c5d}
+    .section{margin-bottom:25px}
+    .section ul{margin-left:20px}
+    .btn{display:inline-block;padding:12px 18px;background:#0b3c5d;color:#fff;text-decoration:none;border-radius:6px;margin-top:10px}
+    .back{margin-top:30px;display:inline-block;color:#0b3c5d;cursor:pointer}
   </style>
 </head>
 <body>
 
 <header>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Science_icon.png" alt="logo" />
-  <h1>Analytical Proposal for Yash Poly Industries</h1>
-  <p>FTIR & GC-MS | Quality • Compliance • Growth</p>
+  <img src="download.png" alt="Analytical Technologies Limited" />
 </header>
 
-<section class="container">
-  <div class="card" onclick="openPopup('ftir')">
-    <div class="icon">🔬</div>
-    <h2>FTIR</h2>
-    <p>Routine QC & Polymer ID</p>
-  </div>
-  <div class="card" onclick="openPopup('gcms')">
-    <div class="icon">⚗️</div>
-    <h2>GC-MS</h2>
-    <p>Compliance & Deep Analysis</p>
-  </div>
-</section>
+<!-- HOME -->
+<div class="hero" id="home">
+  <h1>Analytical Instrument Proposal</h1>
+  <p>Focused solution overview based strictly on shared quotation</p>
 
-<section class="compare">
-  <h3>FTIR vs GC-MS (Management Summary)</h3>
-  <table>
-    <tr><th>Parameter</th><th>FTIR</th><th>GC-MS</th></tr>
-    <tr><td>Primary Role</td><td>Daily QC & Material ID</td><td>Compliance & Additive Analysis</td></tr>
-    <tr><td>Speed</td><td>Minutes</td><td>Detailed (Longer)</td></tr>
-    <tr><td>Cost Level</td><td>Medium</td><td>High (Strategic)</td></tr>
-    <tr><td>RoHS Support</td><td>Screening</td><td>Confirmatory</td></tr>
-    <tr><td>ROI Impact</td><td>Immediate</td><td>Long-term</td></tr>
-  </table>
-</section>
-
-<!-- FTIR POPUP -->
-<div class="popup" id="ftirPopup">
-  <div class="popup-content">
-    <span class="close" onclick="closePopup()">&times;</span>
-    <h3>FTIR Spectrometer with ATR</h3>
-
-    <div class="section">
-      <h4>What It Does</h4>
-      <ul>
-        <li>Identifies polymer type and chemical structure</li>
-        <li>Verifies raw materials and batch consistency</li>
-        <li>Detects contamination and formulation deviation</li>
-      </ul>
+  <div class="options">
+    <div class="card" onclick="openPage('ftir')">
+      <div class="icon">🔬</div>
+      <h2>FTIR</h2>
     </div>
-
-    <div class="section">
-      <h4>Daily Use at Yash Poly</h4>
-      <ul>
-        <li>Incoming raw material approval</li>
-        <li>Routine QC before batch release</li>
-        <li>Customer complaint investigation</li>
-      </ul>
+    <div class="card" onclick="openPage('gcms')">
+      <div class="icon">⚗️</div>
+      <h2>GC-MS</h2>
     </div>
-
-    <div class="section">
-      <h4>Why FTIR is Essential</h4>
-      <ul>
-        <li>Direct solid testing using ATR</li>
-        <li>Fast results, minimal operator skill</li>
-        <li>Supports ISO & RoHS readiness</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h4>Commercial & ROI</h4>
-      <ul>
-        <li>One-time investment (~₹17.5 Lakh)</li>
-        <li>Saves recurring external testing costs</li>
-        <li>Payback typically within 1–2 years</li>
-      </ul>
-    </div>
-
-    <a class="btn" href="#">Download FTIR Quotation</a>
-    <a class="btn" href="#">Download FTIR ROI</a>
   </div>
 </div>
 
-<!-- GC-MS POPUP -->
-<div class="popup" id="gcmsPopup">
-  <div class="popup-content">
-    <span class="close" onclick="closePopup()">&times;</span>
-    <h3>GC-MS with Pyrolyser</h3>
+<!-- FTIR PAGE -->
+<div class="page" id="ftir">
+  <h2>FTIR Spectrometer with ATR</h2>
 
-    <div class="section">
-      <h4>What It Does</h4>
-      <ul>
-        <li>Identifies additives, plasticizers & flame retardants</li>
-        <li>Detects restricted RoHS substances</li>
-        <li>Provides exact chemical fingerprint</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h4>Role of Pyrolyser</h4>
-      <ul>
-        <li>Converts solid polymers into analyzable vapors</li>
-        <li>Essential for PVC, HFFR & XLPE materials</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h4>Why GC-MS is Strategic</h4>
-      <ul>
-        <li>Mandatory for advanced compliance demands</li>
-        <li>Reduces dependence on third-party labs</li>
-        <li>Improves export & OEM acceptance</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h4>Commercial & ROI</h4>
-      <ul>
-        <li>Strategic investment (~₹42.5 Lakh)</li>
-        <li>High-value customer & export support</li>
-        <li>Long-term ROI & brand positioning</li>
-      </ul>
-    </div>
-
-    <a class="btn" href="#">Download GC-MS Quotation</a>
-    <a class="btn" href="#">Download GC-MS ROI</a>
+  <div class="section">
+    <h3>Purpose</h3>
+    <p>Routine polymer identification and quality control of PVC, HFFR and XLPE materials.</p>
   </div>
+
+  <div class="section">
+    <h3>How It Will Be Used</h3>
+    <ul>
+      <li>Incoming raw material verification</li>
+      <li>Batch-to-batch consistency check</li>
+      <li>Contamination and complaint investigation</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>Key Features from Quotation</h3>
+    <ul>
+      <li>FTIR Model 3000A</li>
+      <li>Single Reflection ATR for direct solid testing</li>
+      <li>High stability optics and IR libraries included</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>Why Select This FTIR</h3>
+    <ul>
+      <li>No sample preparation – faster QC decisions</li>
+      <li>Supports ISO, RoHS and customer audits</li>
+      <li>Make-in-India with local service support</li>
+    </ul>
+  </div>
+
+  <a class="btn" href="#">Download FTIR Quotation</a>
+    <a class="btn" href="#">Download FTIR ROI</a>
+    <a class="btn" href="#">Download FTIR Justification Note</a><br>
+  <span class="back" onclick="goHome()">← Back to selection</span>
+</div>
+
+<!-- GC-MS PAGE -->
+<div class="page" id="gcms">
+  <h2>GC-MS System with Pyrolyser</h2>
+
+  <div class="section">
+    <h3>Purpose</h3>
+    <p>Advanced chemical analysis for polymer additives, RoHS compliance and customer validation.</p>
+  </div>
+
+  <div class="section">
+    <h3>How It Will Be Used</h3>
+    <ul>
+      <li>Detection of restricted substances and additives</li>
+      <li>Support before Intertek / third-party testing</li>
+      <li>Failure analysis and formulation development</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>Key Features from Quotation</h3>
+    <ul>
+      <li>GC-MS System Model 3068</li>
+      <li>Integrated Pyrolyser for solid polymer analysis</li>
+      <li>NIST library and analytical software</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>Why Select This GC-MS</h3>
+    <ul>
+      <li>Essential for RoHS and export-level compliance</li>
+      <li>Reduces dependency on external labs</li>
+      <li>Strategic long-term investment</li>
+    </ul>
+  </div>
+
+  <a class="btn" href="#">Download GC-MS Quotation</a>
+    <a class="btn" href="#">Download GC-MS ROI</a>
+    <a class="btn" href="#">Download GC-MS Justification Note</a><br>
+  <span class="back" onclick="goHome()">← Back to selection</span>
 </div>
 
 <script>
-  function openPopup(type){
-    document.getElementById(type==='ftir'?'ftirPopup':'gcmsPopup').style.display='flex';
+  function openPage(id){
+    document.getElementById('home').style.display='none';
+    document.getElementById('ftir').style.display='none';
+    document.getElementById('gcms').style.display='none';
+    document.getElementById(id).style.display='block';
+    window.scrollTo(0,0);
   }
-  function closePopup(){
-    document.getElementById('ftirPopup').style.display='none';
-    document.getElementById('gcmsPopup').style.display='none';
+  function goHome(){
+    document.getElementById('ftir').style.display='none';
+    document.getElementById('gcms').style.display='none';
+    document.getElementById('home').style.display='block';
+    window.scrollTo(0,0);
   }
 </script>
 
+<footer style="background:#0b3c5d;color:#fff;padding:25px;text-align:center;margin-top:40px">
+  <strong>Presented by:</strong><br>
+  Kaushik Saroj<br>
+  Business Development Executive<br>
+  Analytical Technologies Limited<br>
+  Ahmedabad – West Zone<br>
+  📧 atlsaleswest03@gmail.com | 📞 +91 63589 54308
+</footer>
 </body>
 </html>
